@@ -144,6 +144,7 @@ a {
     transition-duration: 0.5s, 0.5s;
     transition-timing-function: ease-in, ease-in-out;
     transition-delay: 0s;
+    
 
     /*
     padding: 5px;    
@@ -166,8 +167,6 @@ a:hover {
     margin-bottom: 65px ;  
 }
 
-
-
 .boton {
     display: inline;
     align-items: center;
@@ -188,7 +187,7 @@ strong {
     font-size: 70px ;
 }
 .titulos {
-    background-color: grey;
+    background: linear-gradient(45deg, rgba(135,212,219,0.5) 14%,rgba(106,169,160,0.5) 38%,rgba(50,87,47,0.7) 84%,rgba(31,59,8,0.7) 100%);
 }
 
 .titulos h1 {
@@ -214,19 +213,11 @@ strong {
     right: 0%;
 }
 
-.slider_1{
-    margin: 0;
-    padding: 0;
-} 
-
-.slider_1 li{
-    align-items: center;
-}
 .caja_content {
     padding-top: 40px;
     display: flex;
-
     justify-content: space-evenly;
+    margin-bottom: 30px;
 }
 
 .caja {
@@ -244,7 +235,7 @@ footer {
 }
 
 footer p {
-    margin: 0;
+    margin-top: 10px;
 }
 
 .contenido_consejos h2 {
@@ -267,6 +258,9 @@ footer p {
 .grid3{
     grid-area: foto3;
 }
+
+
+
 
 /* grid pagina de consejo */
 
