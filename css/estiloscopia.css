@@ -1,4 +1,3 @@
-
 html,
 body {
     padding: 0;
@@ -9,13 +8,18 @@ body {
 .container-fluid {
     width: 50% !important;
     padding-left: 40px!important;
-    margin: 10px !important;
+    margin: 8px !important;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
     display: inline-block;    
     padding-left: 1%;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 ul {
@@ -26,7 +30,14 @@ ul {
 .redes li {
     display: inline-block;
     padding-right: 35px;
-    margin-top: 40px;
+    margin-top: 35px;
+}
+
+.redes ul {
+    position: absolute;
+    margin-top: 1%;
+    top: 0%;
+    right: 0%;
 }
 
 .redes a {
@@ -81,21 +92,16 @@ ul {
     color: black;
 }
 
-.principal5 .container {
-    width: 40%;
-    padding-left: 55%;
-}
-
-
-
 .principal6 {
     background-image: url("../Foto/chris.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}   
+}  
+
 .sobremi{
     margin-bottom: 60px;
 }
+
 .sobremi h1{
     text-align: center;
     font-size: 50px;
@@ -125,20 +131,6 @@ ul {
     text-align: center;
 }
 
-
-
-.container {
-    display: flex;
-    width: 50%;
-    flex-direction: row;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-left: 48%;
-    gap: 20px;
-    margin-top: 40px;
-}
-
 a {
     text-decoration: inherit;
     background-color: transparent;
@@ -150,12 +142,6 @@ a {
     transition-duration: 0.5s, 0.5s;
     transition-timing-function: ease-in, ease-in-out;
     transition-delay: 0s;
-    
-
-    /*
-    padding: 5px;    
-    border-style: outset;
-    */
 }
 
 a:hover {
@@ -167,10 +153,10 @@ a:hover {
     display: inline-block;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-left: 10%;
     color: whitesmoke;
-    margin-bottom: 65px ;  
+    margin-bottom: 50px ;  
 }
 
 .boton {
@@ -192,8 +178,11 @@ strong {
     font-weight: 600;
     font-size: 70px ;
 }
+
 .titulos {
     background: linear-gradient(45deg, rgba(135,212,219,0.5) 14%,rgba(106,169,160,0.5) 38%,rgba(50,87,47,0.7) 84%,rgba(31,59,8,0.7) 100%);
+    background-size: cover;
+    padding-bottom: 50px;
 }
 
 .titulos h1 {
@@ -211,37 +200,62 @@ strong {
     text-align: center;
 }
 
-
-.redes ul {
-    position: absolute;
-    margin-top: 1%;
-    top: 0%;
-    right: 0%;
+.carousel-inner {
+    width: auto !important;
+    max-width: 1300px !important;
+    height: 550px;
+    margin: auto;
 }
 
 .caja_content {
-    padding-top: 40px;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 30px;
+    align-items: center;
+    padding-top: 65px;
 }
 
 .caja {
+    display: flex;
     flex: 1;
-    height: auto;
-    border: 5px solid grey;
+    border-radius: 100%;
     text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    font-weight: 600;
+    color: white;
+}
+
+.caja h2 {
+    font-weight: 600;
+}
+
+.caja p {
+    font-size: 16px;
+}
+
+.caja_1 {
+    background-image: url(../Foto/you.jpg);
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.caja_2 {
+    background-image: url(../Foto/disponibilidad.jpg);
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.caja_3 {
+    background-image: url(../Foto/atencionpersonalizada.jpg);
+    background-size: cover;
+    opacity: 0.7;
 }
 
 footer {
     font-style: italic;
     text-align: center;
-    border: 3px solid black;
-    margin: 0;
-}
-
-footer p {
-    margin-top: 10px;
+    padding-top: 65px;
 }
 
 .contenido_consejos h2 {
@@ -258,20 +272,20 @@ footer p {
 .grid1{
     grid-area: foto1;
 }
+
 .grid2{
     grid-area: foto2;
 }
+
 .grid3{
     grid-area: foto3;
 }
-
-
-
 
 /* grid pagina de consejo */
 
 .grid-consejos {
     margin-top: 25px;
+    row-gap: 40px;
     display: grid;
     width: 100%;
     grid-template-areas: "consejo"
@@ -315,6 +329,7 @@ footer p {
     background-color: #EBF5FB;
 
 }
+
 .grid-preguntas h1 {
     text-align: center;
 }
@@ -418,6 +433,7 @@ footer p {
 .gridform6 {
     grid-area: patologia;
 }
+
 .gridform6 p {
     font-size: 15px;
 }
@@ -437,7 +453,6 @@ footer p {
 
 @media (max-width: 480px) {
 
-
     a{
         font-size: 15px;
     }
@@ -445,7 +460,8 @@ footer p {
     .caja_content{
         flex-wrap: wrap;
     }
-    .caja{
+
+    .caja {
         flex:auto;
         width: 100%;
     }
@@ -455,7 +471,10 @@ footer p {
         width: 40%;        
     }
  
-
+    .container-fluid {
+        flex-direction: row-reverse;
+    }
+    
     .logo {
       
         padding-left: 1%;
@@ -469,6 +488,34 @@ footer p {
     }
     .slogan {
         padding-left: 5%;
+    }
+
+    span {
+        font-size: 30px;
+    }
+    strong {
+        font-size: 45px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }    
+
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+
+    .caja_content {
+        flex-wrap: wrap;
+    }
+
+    .caja {
+        flex: auto;
+        width: 100%;
+    }
+   
+    .container-fluid {
+        flex-direction: row-reverse;
     }
 
 }
