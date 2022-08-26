@@ -26,43 +26,26 @@ body {
 ul {
   list-style: none; }
 
-/*
-
-.redes {
-
-    li {
-        display: inline-block;
-        padding-right: 35px;
-        margin-top: 35px;
-    }
-
-        
-    ul {
-        position: absolute;
-        margin-top: 1%;
-        top: 0%;
-        right: 0%;
-    }
-
-    a {
-        border: none;
-    }
-}
-*/
 .principal {
   background-image: url("../Foto/fotofondo.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
 
 .principal1 {
   background-image: url("../Foto/salud.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
 
 .principal3 {
   background-image: url("../Foto/fotocontacto.jpeg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
   .principal3 .slogan {
     color: #198754; }
   .principal3 a {
@@ -71,7 +54,9 @@ ul {
 .principal4 {
   background-image: url("../Foto/preguntasfrecuentes.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
   .principal4 .slogan {
     color: black; }
   .principal4 a {
@@ -80,7 +65,9 @@ ul {
 .principal5 {
   background-image: url("../Foto/ejercicios.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
   .principal5 .slogan {
     color: black; }
   .principal5 a {
@@ -89,7 +76,9 @@ ul {
 .principal6 {
   background-image: url("../Foto/chris.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; }
 
 .sobremi {
   margin-bottom: 60px; }

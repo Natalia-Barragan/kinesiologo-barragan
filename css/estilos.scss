@@ -3,7 +3,10 @@ $fotofondo: cover;
 @mixin background {
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
+
 
 html,
 body {
@@ -39,33 +42,6 @@ ul {
 	list-style: none;
 
 }
-
-.menu{
-
-}
-/*
-
-.redes {
-
-    li {
-        display: inline-block;
-        padding-right: 35px;
-        margin-top: 35px;
-    }
-
-        
-    ul {
-        position: absolute;
-        margin-top: 1%;
-        top: 0%;
-        right: 0%;
-    }
-
-    a {
-        border: none;
-    }
-}
-*/
 
 .principal {
     background-image: url("../Foto/fotofondo.jpg");
@@ -506,4 +482,5 @@ footer {
     .container-fluid {
         flex-direction: row-reverse;
     }
+
 }
