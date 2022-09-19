@@ -518,3 +518,30 @@ footer {
     width: auto;
     grid-template-rows: 350px 350px;
     justify-content: center; } }
+
+@media (min-width: 992px) and (max-width: 1460px) {
+  .titulos {
+    display: flex;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: auto; }
+    .titulos h1 {
+      font-size: 23px;
+      margin-top: 0 !important;
+      padding-top: 10px; }
+    .titulos h2 {
+      font-size: 18px;
+      margin: 20px !important; }
+    .titulos p {
+      font-size: 18px;
+      text-align: justify;
+      width: 90%;
+      margin: auto; }
+    .titulos .texto {
+      flex: 1;
+      margin: 0; }
+  .carousel-inner {
+    flex: 1;
+    max-width: 600px !important;
+    margin: auto; } }
