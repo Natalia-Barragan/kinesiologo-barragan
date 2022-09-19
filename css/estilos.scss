@@ -7,7 +7,6 @@ $fotofondo: cover;
     flex-direction: column;
 }
 
-
 html,
 body {
     padding: 0;
@@ -28,7 +27,7 @@ body {
 
 .principal-foto{
     display: flex;
-    padding: 40px;
+    padding: 60px;
 }
 
 .logo {
@@ -44,8 +43,15 @@ ul {
 }
 
 .principal {
-    background-image: url("../Foto/fotofondo.jpg");
+    background-image: url("../Foto/correr.jpg");
     @include background;
+
+    .slogan{
+        color: black;
+    }
+    a{
+        color: black;
+    }
 }
 
 .principal1 {
@@ -80,15 +86,15 @@ ul {
 }
 
 .principal5 {
-    background-image: url("../Foto/ejercicios.jpg");
+    background-image: url("../Foto/progejercicios.jpg");
     @include background;
 
     .slogan {
-        color: black;
+        color: white;
     }
 
     a {
-        color: black;
+        color: white;
     }
 }
 
@@ -98,22 +104,20 @@ ul {
 }  
 
 .sobremi{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
     h1{
+        font-weight: 600;
         text-align: center;
         font-size: 50px;
+        margin: 40px !important;
+        margin-top: 50px !important;
     }
 
     div {
         text-align: center;
-        font-size: 20px;
-    }
-}
-
-.formulario {
-    h1 {
-        text-align: center;
+        font-size: 25px;
+        padding: 40px;
     }
 }
 
@@ -165,38 +169,48 @@ strong {
 }
 
 .titulos {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    display: flex;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: auto;  
 
-    h1 {
-        font-size: 30px;
-        text-align: center;
+    h1{
+        font-size: 28px;
+        text-align: justify;
+        margin: 27px;     
     }
 
-    h2 {
-        font-size: 25px;
-        text-align: center;
+    h2{
+        font-size: 23px;      
+        margin: 25px;      
     }
 
-    h3 {
+    p{
         font-size: 20px;
-        text-align: center;
+        text-align: justify;
+        width: 90%;
+        margin: auto;
     }
+
+    .texto{
+        flex: 1;
+    }
+
 }
 
 .carousel-inner {
-    width: auto !important;
-    max-width: 1300px !important;
+    flex: 1;   
+    max-width: 700px !important;
     height: 550px;
-    margin: auto;
-    padding-top: 50px;
+    margin: auto;  
 }
 
 .caja_content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 65px;
+    padding-top: 55px;
 }
 
 .caja {
@@ -240,23 +254,20 @@ strong {
 footer {
     font-style: italic;
     text-align: center;
-    padding-top: 65px;
-}
+    padding: 30px;
 
-.contenido_consejos {
-    h2 {
-        font-size: 25px;
+    p{
+        margin: 0;
     }
 }
  
 /* grid pagina de consejo */
 
 .grid-consejos {
-    margin-top: 25px;
     row-gap: 40px;
     display: grid;
     width: 100%;
-    background-color: #F43B2F;
+    background-color: #F56F64 ;
     grid-template-areas: "consejo"
                          "moviemiento"
                          "peso"
@@ -267,14 +278,18 @@ footer {
 
     h1 {
         text-align: center;
+        margin: 30px;
     }
 
     p {
         font-size: 25px;
+        text-align: center;
+        margin: 0;
     }
 
     h2 {
         text-align: center;
+        margin: 20px;
     }
 
     h3 {
@@ -285,7 +300,6 @@ footer {
 /*grid pagina preguntas frecuentes*/
 
 .grid-preguntas {
-    margin-top: 25px;
     display: grid;
     width: 100%;
     grid-template-areas: "pregunta"
@@ -297,79 +311,171 @@ footer {
 
     h1 {
         text-align: center;
+        margin: 35px;
+        font-weight: 600;
     }
 
     h2 {
         text-align: center;
+        margin: 40px;
+        font-weight: 500;
     }
 
     h3 {
         text-align: center;
+        margin: 20px;
     }
 }
 
 /*grid pagina programa de ejercicios*/
 
 .grid-programa {
-    margin-top: 25px;
     display: grid;
-    width: 100%;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 350px 350px;
+    justify-content: center;
     grid-template-areas: "programa programa"
-                         "cervicalgia lumbalgia"
-                         "manguito rodilla"
-                         "tobillo tobillo";     
-    
-    h1 {
-    text-align: center;
-    }                    
-    
-    h2 {
-        text-align: center;
+                         "cervicalgia cervicalgia1"
+                         "lumbalgia1 lumbalgia"
+                         "manguito manguito1"
+                         "rodilla1 rodilla"
+                         "tobillo tobillo1"; 
+
+   h1{
+       text-align: center;
+   }
+
+   h2{
+       text-align: center;     
     }
 
-    a {
+    a{
         display: block;
         text-align: center;
         color: black;
-        font-size: 20px;
+        font-size: 20px; 
     }
 
     p {
-        text-align: center;
+        text-align: center; 
     }
 }
 
-
 .gridprog1 {
-    grid-area: programa;
+    grid-area: programa; 
+    padding: 130px;
+
+    h1{
+        font-weight: 600;
+        font-size: 50px;
+    } 
 }
 
 .gridprog2 {
-    grid-area: cervicalgia;
+    grid-area: cervicalgia; 
 }
 
 .gridprog3 {
-    grid-area: lumbalgia;
-}
+    grid-area: cervicalgia1; 
+
+    h2{
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 25px;
+    } 
+
+    p{
+        font-size: 20px;
+        margin: 45px;
+    }
+}    
 
 .gridprog4 {
-    grid-area: manguito;
+    grid-area: lumbalgia; 
 }
 
 .gridprog5 {
-    grid-area: rodilla;
+    grid-area: lumbalgia1; 
+
+    h2{
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 25px;
+    } 
+
+    p{
+        font-size: 25px;
+        margin: 45px;
+    } 
 }
 
 .gridprog6 {
-    grid-area: tobillo;
+    grid-area: manguito; 
 }
+
+.gridprog7 {
+    grid-area: manguito1; 
+
+    h2{
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 25px;
+    } 
+
+    p{
+        font-size: 25px;
+        margin: 45px;
+    } 
+}
+
+.gridprog8 {
+    grid-area: rodilla; 
+}
+
+.gridprog9 {
+    grid-area: rodilla1; 
+
+    h2{
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 25px;
+    } 
+
+    p{
+        font-size: 25px;
+        margin: 45px;
+    } 
+}
+
+.gridprog10 {
+    grid-area: tobillo; 
+}
+
+.gridprog11 {
+    grid-area: tobillo1; 
+
+    h2{
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 25px;
+    } 
+
+    p{
+        font-size: 25px;
+        margin: 45px;
+    }   
+}
+
 
 /*grid pagina contacto*/
 
 .grid-form {
     margin-top: 25px;
     display: grid;
-    width: 100%;
+    width: 80%;
+    margin: 20%;
+    margin-top: 50px;
+    margin-bottom: 40px;
     grid-template-areas: "ingresa ingresa"
                          "nombre apellido"
                          "correo fecha"
@@ -382,39 +488,90 @@ footer {
 
 .gridform2 {
     grid-area: nombre;
+
+    p{
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 
 .gridform3 {
     grid-area: apellido;
+
+    p{
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 
 .gridform4 {
     grid-area: correo;
+
+    p{
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 
 .gridform5 {
     grid-area: fecha;
+
+    p{
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 
 .gridform6 {
     grid-area: patologia;
+
+    p{
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 
 .gridform6 p {
     font-size: 15px;
+
+    p{
+        margin-top: 20px;
+    }
 }
 
 .gridform7 {
     grid-area: cobertura;
-
+    
+    p{
+        margin: 0;
+        margin-top: 20px;
+    }
     span {
-        font-size: 15px;
+        font-size: 17px;
     }
     
 }
 
 .formulario {
+    margin-top: 20px;
     margin-bottom: 40px;
+
+    h1 {
+        text-align: center;
+        margin: 40px;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.d-grid{
+    justify-items: center;
+}
+
+.btn{
+    max-width: 70% !important;
 }
 
 
@@ -431,7 +588,6 @@ footer {
 
     .caja {
         flex:auto;
-        width: 100%;
     }
 
     .container-fluid {
@@ -460,15 +616,146 @@ footer {
     }
     strong {
         font-size: 45px;
+    }   
+
+    .grid-programa {
+        display: grid;
+        grid-template-columns: 480px;
+        grid-template-rows: 350px;
+        justify-content: center;
+        grid-template-areas: "programa"
+       "cervicalgia"
+       "cervicalgia1"
+       "lumbalgia"
+       "lumbalgia1"
+       "manguito"
+       "manguito1"
+       "rodilla"
+       "rodilla1"
+       "tobillo"
+       "tobillo1";
+    }    
+
+    .gridprog1 {
+        grid-area: programa; 
     }
 
-    .carousel-inner {
-        height: auto;
-    }    
+    .gridprog2 {
+        grid-area: cervicalgia; 
+    }
+
+    .gridprog3 {
+        grid-area: cervicalgia1; 
+    }
+
+    .gridprog4 {
+        grid-area: lumbalgia; 
+    }
+
+    .gridprog5 {
+        grid-area: lumbalgia1; 
+    }
+
+    .gridprog6 {
+        grid-area: manguito; 
+    }
+
+    .gridprog7 {
+        grid-area: manguito1; 
+    }
+
+    .gridprog8 {
+        grid-area: rodilla; 
+    }
+
+    .gridprog9 {
+        grid-area: rodilla1; 
+    }
+
+    .gridprog10 {
+        grid-area: tobillo; 
+    }
+
+    .gridprog11 {
+        grid-area: tobillo1; 
+    }
 
 }
 
+.titulos {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin: auto;  
+
+    h1{
+        font-size: 28px;
+        text-align: center;
+        margin: 20px;     
+    }
+
+    h2{
+        font-size: 18px;      
+        margin: 10px;  
+        text-align: center;    
+    }
+
+    p{
+        font-size: 15px;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+.carousel-inner {
+    margin-top: 20px;    
+    height: 50% !important;
+}
+
+
 @media (min-width: 481px) and (max-width: 992px) {
+
+    .titulos {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        width: 100%;
+        margin: auto;  
+    
+        h1{
+            font-size: 28px;
+            text-align: center;
+            margin: 20px;     
+        }
+    
+        h2{
+            font-size: 18px;      
+            margin: 10px;  
+            text-align: center;    
+        }
+    
+        p{
+            font-size: 15px;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+        }
+    
+    }
+
+    .texto{
+        flex: 1;
+    }
+    
+    .carousel-inner {
+        flex: 1;
+        margin-top: 20px;    
+        height: 100% !important;
+        max-width: 495px !important;
+    }
 
     .caja_content {
         flex-wrap: wrap;
@@ -482,5 +769,14 @@ footer {
     .container-fluid {
         flex-direction: row-reverse;
     }
+
+    
+    .grid-programa {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    width: auto;
+    grid-template-rows: 350px 350px;
+    justify-content: center;}
+
 
 }

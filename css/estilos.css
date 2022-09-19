@@ -15,7 +15,7 @@ body {
 
 .principal-foto {
   display: flex;
-  padding: 40px; }
+  padding: 60px; }
 
 .logo {
   display: flex;
@@ -27,11 +27,15 @@ ul {
   list-style: none; }
 
 .principal {
-  background-image: url("../Foto/fotofondo.jpg");
+  background-image: url("../Foto/correr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column; }
+  .principal .slogan {
+    color: black; }
+  .principal a {
+    color: black; }
 
 .principal1 {
   background-image: url("../Foto/salud.jpg");
@@ -63,15 +67,15 @@ ul {
     color: black; }
 
 .principal5 {
-  background-image: url("../Foto/ejercicios.jpg");
+  background-image: url("../Foto/progejercicios.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column; }
   .principal5 .slogan {
-    color: black; }
+    color: white; }
   .principal5 a {
-    color: black; }
+    color: white; }
 
 .principal6 {
   background-image: url("../Foto/chris.jpg");
@@ -81,16 +85,17 @@ ul {
   flex-direction: column; }
 
 .sobremi {
-  margin-bottom: 60px; }
+  margin-bottom: 40px; }
   .sobremi h1 {
+    font-weight: 600;
     text-align: center;
-    font-size: 50px; }
+    font-size: 50px;
+    margin: 40px !important;
+    margin-top: 50px !important; }
   .sobremi div {
     text-align: center;
-    font-size: 20px; }
-
-.formulario h1 {
-  text-align: center; }
+    font-size: 25px;
+    padding: 40px; }
 
 a {
   text-decoration: inherit;
@@ -133,30 +138,37 @@ strong {
   font-size: 70px; }
 
 .titulos {
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: auto; }
   .titulos h1 {
-    font-size: 30px;
-    text-align: center; }
+    font-size: 28px;
+    text-align: justify;
+    margin: 27px; }
   .titulos h2 {
-    font-size: 25px;
-    text-align: center; }
-  .titulos h3 {
+    font-size: 23px;
+    margin: 25px; }
+  .titulos p {
     font-size: 20px;
-    text-align: center; }
+    text-align: justify;
+    width: 90%;
+    margin: auto; }
+  .titulos .texto {
+    flex: 1; }
 
 .carousel-inner {
-  width: auto !important;
-  max-width: 1300px !important;
+  flex: 1;
+  max-width: 700px !important;
   height: 550px;
-  margin: auto;
-  padding-top: 50px; }
+  margin: auto; }
 
 .caja_content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 65px; }
+  padding-top: 55px; }
 
 .caja {
   display: flex;
@@ -191,48 +203,55 @@ strong {
 footer {
   font-style: italic;
   text-align: center;
-  padding-top: 65px; }
-
-.contenido_consejos h2 {
-  font-size: 25px; }
+  padding: 30px; }
+  footer p {
+    margin: 0; }
 
 /* grid pagina de consejo */
 .grid-consejos {
-  margin-top: 25px;
   row-gap: 40px;
   display: grid;
   width: 100%;
-  background-color: #F43B2F;
+  background-color: #F56F64;
   grid-template-areas: "consejo" "moviemiento" "peso" "descansa" "fumar" "vacunate" "chequeo"; }
   .grid-consejos h1 {
-    text-align: center; }
+    text-align: center;
+    margin: 30px; }
   .grid-consejos p {
-    font-size: 25px; }
+    font-size: 25px;
+    text-align: center;
+    margin: 0; }
   .grid-consejos h2 {
-    text-align: center; }
+    text-align: center;
+    margin: 20px; }
   .grid-consejos h3 {
     text-align: center; }
 
 /*grid pagina preguntas frecuentes*/
 .grid-preguntas {
-  margin-top: 25px;
   display: grid;
   width: 100%;
   grid-template-areas: "pregunta" "kine" "ejercicio" "rehab" "dolor";
   background-color: #EBF5FB; }
   .grid-preguntas h1 {
-    text-align: center; }
+    text-align: center;
+    margin: 35px;
+    font-weight: 600; }
   .grid-preguntas h2 {
-    text-align: center; }
+    text-align: center;
+    margin: 40px;
+    font-weight: 500; }
   .grid-preguntas h3 {
-    text-align: center; }
+    text-align: center;
+    margin: 20px; }
 
 /*grid pagina programa de ejercicios*/
 .grid-programa {
-  margin-top: 25px;
   display: grid;
-  width: 100%;
-  grid-template-areas: "programa programa" "cervicalgia lumbalgia" "manguito rodilla" "tobillo tobillo"; }
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 350px 350px;
+  justify-content: center;
+  grid-template-areas: "programa programa" "cervicalgia cervicalgia1" "lumbalgia1 lumbalgia" "manguito manguito1" "rodilla1 rodilla" "tobillo tobillo1"; }
   .grid-programa h1 {
     text-align: center; }
   .grid-programa h2 {
@@ -246,28 +265,85 @@ footer {
     text-align: center; }
 
 .gridprog1 {
-  grid-area: programa; }
+  grid-area: programa;
+  padding: 130px; }
+  .gridprog1 h1 {
+    font-weight: 600;
+    font-size: 50px; }
 
 .gridprog2 {
   grid-area: cervicalgia; }
 
 .gridprog3 {
-  grid-area: lumbalgia; }
+  grid-area: cervicalgia1; }
+  .gridprog3 h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 25px; }
+  .gridprog3 p {
+    font-size: 20px;
+    margin: 45px; }
 
 .gridprog4 {
-  grid-area: manguito; }
+  grid-area: lumbalgia; }
 
 .gridprog5 {
-  grid-area: rodilla; }
+  grid-area: lumbalgia1; }
+  .gridprog5 h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 25px; }
+  .gridprog5 p {
+    font-size: 25px;
+    margin: 45px; }
 
 .gridprog6 {
+  grid-area: manguito; }
+
+.gridprog7 {
+  grid-area: manguito1; }
+  .gridprog7 h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 25px; }
+  .gridprog7 p {
+    font-size: 25px;
+    margin: 45px; }
+
+.gridprog8 {
+  grid-area: rodilla; }
+
+.gridprog9 {
+  grid-area: rodilla1; }
+  .gridprog9 h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 25px; }
+  .gridprog9 p {
+    font-size: 25px;
+    margin: 45px; }
+
+.gridprog10 {
   grid-area: tobillo; }
+
+.gridprog11 {
+  grid-area: tobillo1; }
+  .gridprog11 h2 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 25px; }
+  .gridprog11 p {
+    font-size: 25px;
+    margin: 45px; }
 
 /*grid pagina contacto*/
 .grid-form {
   margin-top: 25px;
   display: grid;
-  width: 100%;
+  width: 80%;
+  margin: 20%;
+  margin-top: 50px;
+  margin-bottom: 40px;
   grid-template-areas: "ingresa ingresa" "nombre apellido" "correo fecha" "patologia cobertura"; }
 
 .gridform1 {
@@ -275,29 +351,61 @@ footer {
 
 .gridform2 {
   grid-area: nombre; }
+  .gridform2 p {
+    margin: 0;
+    margin-top: 20px; }
 
 .gridform3 {
   grid-area: apellido; }
+  .gridform3 p {
+    margin: 0;
+    margin-top: 20px; }
 
 .gridform4 {
   grid-area: correo; }
+  .gridform4 p {
+    margin: 0;
+    margin-top: 20px; }
 
 .gridform5 {
   grid-area: fecha; }
+  .gridform5 p {
+    margin: 0;
+    margin-top: 20px; }
 
 .gridform6 {
   grid-area: patologia; }
+  .gridform6 p {
+    margin: 0;
+    margin-top: 20px; }
 
 .gridform6 p {
   font-size: 15px; }
+  .gridform6 p p {
+    margin-top: 20px; }
 
 .gridform7 {
   grid-area: cobertura; }
+  .gridform7 p {
+    margin: 0;
+    margin-top: 20px; }
   .gridform7 span {
-    font-size: 15px; }
+    font-size: 17px; }
 
 .formulario {
+  margin-top: 20px;
   margin-bottom: 40px; }
+  .formulario h1 {
+    text-align: center;
+    margin: 40px; }
+  .formulario h2 {
+    margin-bottom: 30px; }
+
+.d-grid {
+  justify-items: center; }
+
+.btn {
+  max-width: 70% !important; }
 
 @media (max-width: 480px) {
   a {
@@ -305,8 +413,7 @@ footer {
   .caja_content {
     flex-wrap: wrap; }
   .caja {
-    flex: auto;
-    width: 100%; }
+    flex: auto; }
   .container-fluid {
     flex-direction: row-reverse; }
   .logo {
@@ -321,14 +428,96 @@ footer {
     font-size: 30px; }
   strong {
     font-size: 45px; }
-  .carousel-inner {
-    height: auto; } }
+  .grid-programa {
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-rows: 350px;
+    justify-content: center;
+    grid-template-areas: "programa" "cervicalgia" "cervicalgia1" "lumbalgia" "lumbalgia1" "manguito" "manguito1" "rodilla" "rodilla1" "tobillo" "tobillo1"; }
+  .gridprog1 {
+    grid-area: programa; }
+  .gridprog2 {
+    grid-area: cervicalgia; }
+  .gridprog3 {
+    grid-area: cervicalgia1; }
+  .gridprog4 {
+    grid-area: lumbalgia; }
+  .gridprog5 {
+    grid-area: lumbalgia1; }
+  .gridprog6 {
+    grid-area: manguito; }
+  .gridprog7 {
+    grid-area: manguito1; }
+  .gridprog8 {
+    grid-area: rodilla; }
+  .gridprog9 {
+    grid-area: rodilla1; }
+  .gridprog10 {
+    grid-area: tobillo; }
+  .gridprog11 {
+    grid-area: tobillo1; } }
+
+.titulos {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  margin: auto; }
+  .titulos h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 20px; }
+  .titulos h2 {
+    font-size: 18px;
+    margin: 10px;
+    text-align: center; }
+  .titulos p {
+    font-size: 15px;
+    text-align: center;
+    width: 90%;
+    margin: auto; }
+
+.carousel-inner {
+  margin-top: 20px;
+  height: 50% !important; }
 
 @media (min-width: 481px) and (max-width: 992px) {
+  .titulos {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin: auto; }
+    .titulos h1 {
+      font-size: 28px;
+      text-align: center;
+      margin: 20px; }
+    .titulos h2 {
+      font-size: 18px;
+      margin: 10px;
+      text-align: center; }
+    .titulos p {
+      font-size: 15px;
+      text-align: center;
+      width: 90%;
+      margin: auto; }
+  .texto {
+    flex: 1; }
+  .carousel-inner {
+    flex: 1;
+    margin-top: 20px;
+    height: 100% !important;
+    max-width: 495px !important; }
   .caja_content {
     flex-wrap: wrap; }
   .caja {
     flex: auto;
     width: 100%; }
   .container-fluid {
-    flex-direction: row-reverse; } }
+    flex-direction: row-reverse; }
+  .grid-programa {
+    display: grid;
+    grid-template-columns: 480px 480px;
+    width: auto;
+    grid-template-rows: 350px 350px;
+    justify-content: center; } }
